@@ -1,3 +1,3 @@
 # Snake-game
 We all enjoy playing this game so much. But who could imagine that one day I will make it.
-![Alt text](Javascript Practice - Google Chrome 2021-02-01 13-16-13.mp4)
+[![SC2 Video](doc/SC2_youtube.PNG)](https://www.youtube.com/watch?v=--b-9HrKK6w "SC2 Mini game - Click to Watch!")
