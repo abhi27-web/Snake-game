@@ -114,6 +114,22 @@ function init(){
 
 
 	document.addEventListener('keydown',keyPressed) ;
+	
+	document.addEventListener('swiped-left', function(e) {
+  		snake.direction = "left";
+	});
+
+	document.addEventListener('swiped-right', function(e) {
+	  snake.direction = "right";
+	});
+
+	document.addEventListener('swiped-up', function(e) {
+	  snake.direction = "up";
+	});
+
+	document.addEventListener('swiped-down', function(e) {
+	  snake.direction = "down";
+	});
 
 	
 }
