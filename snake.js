@@ -54,28 +54,7 @@ let score = 0;
 let d;
 
 document.addEventListener("keydown",direction);
-window.onload = function() {
 
-    document.addEventListener('swiped-left', function(e) {
-        left.play();
-        d = "LEFT";
-    });
-
-    document.addEventListener('swiped-right', function(e) {
-        d = "RIGHT";
-        right.play();
-    });
-
-    document.addEventListener('swiped-up', function(e) {
-        d = "RIGHT";
-        right.play();
-    });
-
-    document.addEventListener('swiped-down', function(e) {
-       	d = "DOWN";
-        down.play();
-    });
-}
 
    
     let key = event.keyCode;
