@@ -1,7 +1,3 @@
-/*
-Create by Learn Web Developement
-Youtube channel : https://www.youtube.com/channel/UC8n8ftV94ZU_DJLOLtrpORA
-*/
 
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
@@ -58,11 +54,30 @@ let score = 0;
 let d;
 
 document.addEventListener("keydown",direction);
-document.addEventListener('swiped-left', direction);
-document.addEventListener('swiped-right', direction);
-document.addEventListener('swiped-up', direction);
-document.addEventListener('swiped-down', direction);
-function direction(event){
+window.onload = function() {
+
+    document.addEventListener('swiped-left', function(e) {
+        left.play();
+        d = "LEFT";
+    });
+
+    document.addEventListener('swiped-right', function(e) {
+        d = "RIGHT";
+        right.play();
+    });
+
+    document.addEventListener('swiped-up', function(e) {
+        d = "RIGHT";
+        right.play();
+    });
+
+    document.addEventListener('swiped-down', function(e) {
+       	d = "DOWN";
+        down.play();
+    });
+}
+
+   
     let key = event.keyCode;
     if( key == 37 && d != "RIGHT"){
         left.play();
@@ -77,7 +92,7 @@ function direction(event){
         d = "DOWN";
         down.play();
     }
-}
+
 
 // cheack collision function
 function collision(head,array){
