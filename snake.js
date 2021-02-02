@@ -1,4 +1,5 @@
 
+
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
 
@@ -55,8 +56,7 @@ let d;
 
 document.addEventListener("keydown",direction);
 
-
-   
+function direction(event){
     let key = event.keyCode;
     if( key == 37 && d != "RIGHT"){
         left.play();
@@ -71,7 +71,7 @@ document.addEventListener("keydown",direction);
         d = "DOWN";
         down.play();
     }
-
+}
 
 // cheack collision function
 function collision(head,array){
