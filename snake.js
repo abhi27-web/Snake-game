@@ -5,7 +5,7 @@
 function init(){
 	canvas = document.getElementById('mycanvas');
 	W = canvas.width = 1200;
-	H = canvas.height = 500;
+	H = canvas.height = 500
 	pen = canvas.getContext('2d');
 	cs = 66;
 	game_over = false;
