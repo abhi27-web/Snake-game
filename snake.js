@@ -73,6 +73,36 @@ function direction(event){
     }
 }
 
+_touch_start= null
+
+function touch_start(event) {
+	var touches = event.changedTouches;
+	snake._touch_start = [touches[0].pageX, touches[0].pageY];
+}
+
+function touch_end(event) {
+	var touches = event.changedTouches;
+	var end_pos = [touches[0].pageX, touches[0].pageY];
+	var dX = end_pos[0] - snake._touch_start[0],
+		dY = end_pos[1] - snake._touch_start[1],
+		c = Math.sqrt(dX*dX + dY*dY),
+		alpha = Math.acos(dX/c);
+
+	if (alpha < Math.PI * 1/4) {
+		d = "RIGHT";
+    	right.play();
+	} else if (alpha > Math.PI * 3/4) {
+		left.play();
+    	d = "LEFT";
+	} else if (dY > 0) {
+		d = "DOWN";
+    	down.play();
+	} else {
+		d = "UP";
+    	up.play();
+	}
+}
+
 // cheack collision function
 function collision(head,array){
     for(let i = 0; i < array.length; i++){
