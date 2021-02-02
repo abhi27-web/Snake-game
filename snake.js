@@ -56,6 +56,11 @@ let d;
 
 document.addEventListener("keydown",direction);
 
+document.addEventListener("touchstart",touch_start);
+
+document.addEventListener("touchend",touch_end);
+
+
 function direction(event){
     let key = event.keyCode;
     if( key == 37 && d != "RIGHT"){
@@ -76,18 +81,29 @@ function direction(event){
 _touch_start= null
 
 function touch_start(event) {
+    console.log(event);
+    event.preventDefault();
 	var touches = event.changedTouches;
 	snake._touch_start = [touches[0].pageX, touches[0].pageY];
 }
 
+//function to reload game after its over
+function restartGame()
+{
+
+
+
+    location.reload()
+}
+
 function touch_end(event) {
+    event.preventDefault();
 	var touches = event.changedTouches;
-	var end_pos = [touches[0].pageX, touches[0].pageY];
+    var end_pos = [touches[0].pageX, touches[0].pageY];
 	var dX = end_pos[0] - snake._touch_start[0],
 		dY = end_pos[1] - snake._touch_start[1],
 		c = Math.sqrt(dX*dX + dY*dY),
 		alpha = Math.acos(dX/c);
-
 	if (alpha < Math.PI * 1/4) {
 		d = "RIGHT";
     	right.play();
@@ -165,6 +181,10 @@ function draw(){
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
         clearInterval(game);
         dead.play();
+      
+
+        //restarts game in 3 seconds after game over
+        setTimeout(restartGame,3000)
     }
     
     snake.unshift(newHead);
