@@ -11,7 +11,6 @@ function init(){
 	game_over = false;
 	score = 5;
 
-
 	//Create a Image Object for food
 	food_img = new Image();
 	food_img.src = "Assets/apple.png";
