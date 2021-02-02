@@ -1,4 +1,7 @@
-# Snake-game
-We all enjoy playing this game so much. But who could imagine that one day I will make it.
+# Snake-JavaScript
 
-![Game Demo](demo.gif)
+The Snake game, created using JavaScript, and The HTML5 canvas.
+
+Download the starter template, and follow the tutorial on youtube step by step.
+
+Tutorial link : https://youtu.be/9TcU2C1AACw
