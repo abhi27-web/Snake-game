@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="script" href="snake.js">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Snake Game</title>
+        <style>
+			#mydiv{
+				width:100px;
+				height: 100px;
+				background-color: aqua;
+				margin: 20px;
+			}
+
+			#mycanvas{
+				
+				background-image: url("Assets/bg.jpg");
+                border:20px solid green;
+                width:75%;
+                height: 75%;
+                display: block;
+  margin-left: 100%;
+  margin-right: 0px;
+  
+			}
+		</style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index1.html" class="nav__link active">Back</a></li>                   
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        
+            <!--===== Play here =====-->
+            <h2 class="section-title" id="Play Here">Play Here</h2>
+            <div style = "text-align:center;">
+            <canvas id="snake" width="608" height="608"></canvas>
+            
+        </div>
+ 
+           
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Made By Abhigya :)</p>
+            <div class="footer__social">
+               
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        
+    <script src="snake.js"></script>
+    </body>
+</html>
