@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="script" href="snake.js">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Snake Game</title>
+        <style>
+			#mydiv{
+				width:100px;
+				height: 100px;
+				background-color: aqua;
+				margin: 20px;
+			}
+
+			#mycanvas{
+				
+				background-image: url("Assets/bg.jpg");
+                border:20px solid green;
+                width:75%;
+                height: 75%;
+                display: block;
+  margin-left: 100%;
+  margin-right: 0px;
+  
+			}
+		</style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About The Game</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">How To Play</a></li>
+                        <li class="nav__item"><a href="#Play Here" class="nav__link">Play Here</a></li>                      
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+           
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    
+                    <h1 class="home__title">The <span class="home__title-color">Classic</span><br>Snake Game </h1>
+                    <button style = "text-align:right;" type="button"><a href="#Play Here" class ="button" >Play Now!</a></button>
+                                        
+                </div>
+
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About The Game</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="file:///C:/Users/abhig/Videos/Captures/Snake%20Game%20-%20Google%20Chrome%2014-02-2021%2000_11_25.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <p class="about__text">Snake is the common name for a video game concept where the player maneuvers a line which grows in length, with the line itself being a primary obstacle. The concept originated in the 1976 arcade game Blockade, and the ease of implementing Snake has led to hundreds of versions (some of which have the word snake or worm in the title) for many platforms. After a variant was preloaded on Nokia mobile phones in 1998, there was a resurgence of interest in the snake concept as it found a larger audience. There are over 300 Snake-like games for iOS alone.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== CONTROLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">How To Play</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="https://i.pcmag.com/imagery/encyclopedia-terms/wasd-keys-_wasdkey.fit_lim.size_1050x.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <p class="skills__text">The game will start on pressing any of the control keys and will reload once the game is over.</p>
+                        <h2 class="skills__subtitle">Controls</h2>
+                        <p>A->Left</p>
+                        <p>S->Down</p>
+                        <p>D->Right</p>
+                        <p>W->Up</p>
+                        <br>                        
+                        <br>
+                    </div>                                   
+                </div>
+            </section>
+           
+            <!--===== Play here =====-->
+            <h2 class="section-title" id="Play Here">Play Here</h2>
+            <div style = "text-align:center;">
+            <canvas id="snake" width="608" height="608"></canvas>
+            
+        </div>
+ 
+           
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Made By Abhigya :)</p>
+            <div class="footer__social">
+               
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        
+    <script src="snake.js"></script>
+    </body>
+</html>
