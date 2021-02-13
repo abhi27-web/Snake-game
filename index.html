@@ -10,6 +10,20 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio website complete</title>
+        <style>
+			#mydiv{
+				width:100px;
+				height: 100px;
+				background-color: aqua;
+				margin: 20px;
+			}
+
+			#mycanvas{
+				
+				background-image: url("Assets/bg.jpg");
+				border:20px solid green;
+			}
+		</style>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -112,6 +126,7 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="snake.js"></script>
+    <canvas id="mycanvas"> </canvas>    
+    <script src="snake.js"></script>
     </body>
 </html>
