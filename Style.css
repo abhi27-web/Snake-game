@@ -53,9 +53,8 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color: #FFFFFF;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 /*===== z index =====*/
@@ -200,6 +199,9 @@ img{
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+.link{
+  color: #FFFFFF;
 }
 
 /*Active menu*/
