@@ -37,21 +37,20 @@
   --mb-6: 3rem;
 }
 a:link {
-  color: green;
+  color: #FFFFFF;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #FFFFFF;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: blue;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 a:active {
